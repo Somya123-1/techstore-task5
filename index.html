@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Somya's Task 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">TechStore</h1>
+        <div class="nav-links">
+            <a href="#home" onclick="showPage('home')">Home</a>
+            <a href="#products" onclick="showPage('products')">Products</a>
+            <a href="#about" onclick="showPage('about')">About</a>
+            <span class="cart">Cart: <span id="cartCount">0</span></span>
+        </div>
+    </nav>
+
+    <main id="homePage" class="page active">
+        <section class="hero">
+            <h2>Welcome to TechStore</h2>
+            <p>Best electronics at best prices. Capstone Project by Somya Singh.</p>
+            <button onclick="showPage('products')">Shop Now</button>
+        </section>
+    </main>
+
+    <main id="productsPage" class="page">
+        <h2>Our Products</h2>
+        <div class="products-grid" id="productsGrid"></div>
+    </main>
+
+    <main id="aboutPage" class="page">
+        <h2>About This Project</h2>
+        <p><strong>Task 5: Full-Stack Deployment & Project Architecture</strong></p>
+        <p><strong>Features Implemented:</strong></p>
+        <ul>
+            <li>✅ Modular frontend application</li>
+            <li>✅ Client-side routing for seamless navigation</li>
+            <li>✅ Optimized assets for maximum performance</li>
+            <li>✅ Deployed live on Netlify</li>
+        </ul>
+        <p>Built with HTML, CSS, JavaScript as part of Thiranex Internship.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
